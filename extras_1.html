@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .div{
+            height:100px; 
+            width:100px;
+            border:1px solid black;
+            
+        }
+
+        .div1 {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            //float:right; 
+        }
+
+        .red {
+            color:red;
+           
+        }
+
+        .image{
+            width:100%;
+        }
+
+        .img-wrapper {
+            width: 100px;
+            border: 5px solid black;
+            height: 100px;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="div">
+        <p>Welcome  </p>
+    </div>
+
+   
+    <div class="div1">
+        <p>user</p>
+    </div>
+
+    <p class="red">This is a para</p>
+
+    <div class="img-wrapper">
+         <img src="1.jpg" class="image" />
+    </div>
+
+    <!-- basics blog1: intro to divs
+
+        1. div is invisible, if it is not given any height, width and border (though it exists in the document, prove this by placing text inside the div, inform text is different from div)
+        2. responsible for splitting html elements into blocks, so that they can moved and designed easily within the page
+        3. usually selected using class or ids (though other methods exist)
+        4. they are block level elements, meaning they take up the whole of the x-axis, don't allow other elements to side beside them
+            - though this behavior can be changed
+        5. using div with css flex, you can easily create a webpage layout within minutes (link here)
+    
+        -->
+
+    <!--
+        basics blog2: intro to class 
+        1. what class is and 
+        2. how to select a <html> elements using class (div will serve as perfect example)
+        3. its css design related purpose 
+        4. and its js element selection related purpose
+        -->
+
+    <!--
+        basics blog 3: intro to img element 
+        1. self closing one
+        2. src attribute 
+        3. height and width properties 
+        4. how it can be made to fit into smaller divs (for designing purpose)
+    
+        -->
+
+    <script>
+        var para = document.querySelector('.red');
+        para.innerText = 'content changed'; 
+    </script>
+
+
+</body>
+</html>
+

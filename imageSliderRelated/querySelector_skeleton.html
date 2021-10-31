@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body{
+            display:flex; 
+            flex-direction:column; 
+            justify-content:center; 
+            align-items:center; 
+            height:100vh; 
+            
+        }
+
+        button {
+            cursor: pointer;
+            padding: 1px 20px;
+            border-radius:5px;
+        }
+
+        *{
+            font-size:20px;
+            font-family: 'Segoe UI'; 
+        }
+
+        .demo_message{
+            margin-bottom:20px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="demo_message">Please Sign Up!</div>
+    <button>Submit</button>
+
+
+    
+
+    <script>
+        var button = document.querySelector('button'); 
+        var demoMessage = document.querySelector('.demo_message');
+        console.log(demoMessage);
+
+        button.addEventListener('click', function () {
+            demoMessage.innerText = 'Thanks for Signing Up!';
+        })
+
+
+
+
+
+     
+    </script>
+</body>
+</html>

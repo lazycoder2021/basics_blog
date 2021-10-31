@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            margin:0px; 
+            padding:0px;
+            box-sizing:border-box; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+        }
+
+        .container{
+            height:auto; 
+            width:1200px;
+            border:0px solid black;
+            padding:10px;
+            
+        }
+
+        html{
+            scroll-behavior: smooth; 
+        }
+
+        .header{
+            display:flex;
+            align-items:center; 
+            justify-content:space-between; 
+            border:1px solid black;
+            border-radius:4px;
+            
+            
+        }
+        .header .header-text, .home-link {
+            margin:10px;
+        }
+        .header .header-text p{
+            font-size:25px;
+            font-weight:600;
+        }
+
+        .header .home-link{
+            border:1px solid black; 
+            padding:8px 5px;
+            background-color:#ff6961; 
+            color:black;
+            border-radius:4px;
+        }
+
+        .heading{
+            font-weight:200;
+            margin-left:5px;
+        }
+
+        .pane-container{
+            display:flex; 
+            margin-top:20px;
+                        
+        }
+
+        .left-pane{
+            width:25%; 
+            position:fixed; 
+            overflow-y:scroll;
+            margin-top:0px;
+              
+            
+        }
+
+            .left-pane ul li {
+                border-bottom: 1px solid #c2c2c2;
+                border-right: 1px solid #c2c2c2;
+                border-top: 1px solid #c2c2c2;
+                font-size: 15px;
+                font-family: 'Segoe UI';
+                padding: 5px 0px;
+                list-style-type: none;
+                text-decoration: none;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+            }
+
+            .left-pane p {
+                font-family: 'Segoe UI';
+                padding: 5px 0px;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+                font-weight: 600;
+                font-size: 18px;
+                border-top: 1px solid #c2c2c2;
+            }
+
+                .left-pane ul li:hover {
+                    background-color: #ff6347; 
+                }
+
+        .right-pane {
+            width: 75%;
+            margin-left: 380px;
+            
+        }
+
+        .buttons{
+            display:flex; 
+            align-items:center; 
+            justify-content:space-between; 
+        }
+
+        .buttons .button{
+            border:1px solid black; 
+            margin: 10px 5px;
+            padding:5px 15px;
+            background-color:#ff6961; 
+            color:black; 
+            cursor:pointer; 
+            border-radius:4px;
+        }
+        .main-content{
+            margin-top:25px;
+            height:100vh;
+        }
+
+        .main-content p{
+            padding:10px 5px;
+            //letter-spacing:1.0px;
+            line-height:30px;
+            font-size:18px;
+            //font-weight:100;
+        }
+
+            .main-content ol {
+                padding: 10px 5px;
+                margin-left: 30px;
+                letter-spacing: 1.5px;
+                line-height: 30px;
+            }
+
+            .main-content ol li{
+                margin-bottom:18px;
+                font-size:18px;
+            }
+
+        span{
+            color:#ff6347; 
+        }
+
+        .sub{
+            margin-left:10px;
+        }
+
+        .sub2 {
+            margin-left: 20px;
+        }
+
+        .video-container{
+            width:600px;
+            height:auto;
+            margin:10px auto;
+        }
+
+        .video-container video{
+            width:100%; 
+        }
+
+        a{
+            text-decoration:none; 
+            color:black;
+        }
+        .empty{
+            margin-bottom:100px;
+        }
+        
+        section{
+            height:100vh;
+        }
+
+        .top{
+            margin-top:20px;
+        }
+
+        #content{
+            border:1px solid black;
+        }
+
+        .simple_steps li{
+            letter-spacing:0.2px;
+        }
+
+        .fix{
+            margin-top:0px;
+        }
+
+       // @media screen and (max-width:500px) {
+         //   body {
+               // font-size:22px;
+            //}
+        //}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-text">
+                <p>Web<span>Guru</span></p>
+            </div>
+             <!--<div class="home-link">
+            <p>Back to Home</p>
+             </div>-->
+        </div>
+        <div class="pane-container">
+            <div class="left-pane">
+                <p>Table Of Contents</p>
+                <ul>
+                    <a href="#adding_image"><li>Dynamically Change HTML Content</li></a>
+                    <a href="#mark"><li>Mark The HTML Element</li></a>
+                    <a href="#select"><li>Select The HTML Element</li></a>
+
+                    <a href="#modify"><li>Modify The HTML Element</li></a>
+                    <a href="#final_code"><li>Final Code</li></a>
+
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                    <li style="color:transparent;">s</li>
+                </ul>
+            </div>
+            <div class="right-pane">
+                <div class="buttons">
+                    <div class="button">< Previous</div>
+                    <div class="button">Next ></div>
+                </div>
+                <div class="main-content">
+                    <div class="section" id="section1">
+                        <h1 class="heading">What is document.querySelector()?</h1>
+                        <p>document.querySelector() allows you to select html elements so that they can be manipulated using javascript. </p>
+                        <p>The simple demo below shows how a html text element (selected using document.querySelector()) gets manipulated based on button click.</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="../videos/querySelector-1.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                        <br />
+                        <h2 class="heading top" id="adding_image">Dynamically Change HTML Content</h2>
+                        <p>
+                            To change HTML element content dynamically using document.querySelector(), you should do 2 things:
+                            <ol class="simple_steps">
+                                <li>get hold or grasp the html element by its class or id and then </li>
+                                <li>modify the content based on some event like user click or page reload.</li>
+                            </ol>
+
+
+                            <h2 class="heading top" id="mark">Mark The HTML Element Using Class or ID</h2>
+                        <p>Assign a class (or id) to the html element so that it can be selected.</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="../videos/querySelector-2.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+
+                        <h2 class="heading top" id="select" style="margin-top:50px;">Select The Element Using document.querySelector()</h2>
+                        <p>Using document.querySelector(), select the element by its class name and save it in a variable as shown below.</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="../videos/querySelector-3.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                        <br/>
+                        <h2 class="heading top" id="modify">Modify The HTML Element</h2>
+                        <p>There are many ways to do this. Let's use the most popular button 'click' event.</p>
+                        <ol class="simple_steps">
+                            <li>Select the button using document.querySelector() and assign it to variable. </li>
+                            <li>Associate the button with a 'click' <u><a href="#">eventlistener</a></u> that rewrites the <u><a href="#">innerText</a></u> property of the html element when the button gets clicked.</li>
+                        </ol>
+                        <p class="fix">Take a look at how it is done here:</p>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="../videos/querySelector-4.mp4" />
+                            </video>
+                        </div>
+
+                        <br/>
+
+                        <h2 class="heading top" id="final_code">Final Code</h2>
+                        <br />
+                        <div class="server_code" id="server_code">
+
+
+                            <button id="btn" class="btn">Click To Copy</button>
+                            <div id="content" contenteditable="true">
+                                <p><code> const express = require('express');</code></p>
+                                <p><code>const app = express(); </code></p>
+
+
+                                <p><code>app.listen('3000', function () {</code></p>
+                                <p>
+                                    <code style="margin-left:25px;">
+
+                                        console.log('server is running @ 3000');
+                                    </code>
+                                </p>
+
+
+                                <p><code>})</code></p>
+                            </div>
+
+
+                        </div>
+
+                        <br />
+
+
+                    </div>
+                
+
+
+            </div>
+               
+        </div>
+        </div> 
+    </div>
+    <script>
+        
+            var content = document.querySelector('#content');
+            var btn = document.querySelector('#btn');
+
+            btn.addEventListener('click', copyText);
+        btn.style.padding = '2px';
+        btn.style.marginBottom = '2px';
+
+            function copyText() {
+                let temp = content.innerText;
+                copytoClipBoard(temp);
+
+            }
+
+            function copytoClipBoard(str) {
+                const textarea = document.createElement("textarea");
+                textarea.value = str;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textarea);
+                btn.innerText = 'Copied!'
+                //output.innerHTML = "<h3>Copied content</h3>" + textarea.value;
+               
+
+            }
+
+            console.log(content)
+    </script>
+   
+</body>
+</html>
